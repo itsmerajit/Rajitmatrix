@@ -5353,7 +5353,7 @@ background-blend-mode: overlay, screen, overlay, overlay, normal;
                   <!-- Sidebar Wrapper -->
       <div id='sidebar-wrapper'>
         <b:section class='sidebar common-widget' id='sidebar' name='Sidebar Right' showaddelement='yes'>
-          <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='2' visible='true'>
+          <b:widget id='PopularPosts1' locked='true' title='Popular Posts' type='PopularPosts' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -5650,7 +5650,7 @@ background-blend-mode: overlay, screen, overlay, overlay, normal;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='HTML7' locked='false' title='Projects' type='HTML' visible='true'>
+          <b:widget id='HTML7' locked='true' title='Projects' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'>3/Projects/post-list</b:widget-setting>
             </b:widget-settings>
@@ -5661,7 +5661,7 @@ background-blend-mode: overlay, screen, overlay, overlay, normal;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='HTML2' locked='false' title='Subscribe Us' type='HTML' visible='true'>
+          <b:widget id='HTML2' locked='true' title='Subscribe Us' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<div class="videoWrapper">
     <!-- Copy & Pasted from YouTube -->
@@ -5690,7 +5690,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='Label1' locked='false' title='Categories' type='Label' version='2' visible='true'>
+          <b:widget id='Label1' locked='true' title='Categories' type='Label' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
               <b:widget-setting name='display'>LIST</b:widget-setting>
@@ -5737,7 +5737,7 @@ height: 100%;
       </ul>
     </b:includable>
           </b:widget>
-          <b:widget id='Label2' locked='false' title='Tags' type='Label' version='2' visible='true'>
+          <b:widget id='Label2' locked='true' title='Tags' type='Label' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
               <b:widget-setting name='display'>CLOUD</b:widget-setting>
@@ -5784,7 +5784,7 @@ height: 100%;
       </ul>
     </b:includable>
           </b:widget>
-          <b:widget id='Attribution1' locked='false' title='' type='Attribution' visible='true'>
+          <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='copyright'/>
             </b:widget-settings>
@@ -5818,7 +5818,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='Label15' locked='false' title='Categories' type='Label' version='2' visible='true'>
+          <b:widget id='Label15' locked='true' title='Categories' type='Label' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
               <b:widget-setting name='display'>LIST</b:widget-setting>
@@ -5865,12 +5865,12 @@ height: 100%;
       </ul>
     </b:includable>
           </b:widget>
-          <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse' visible='true'>
+          <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='true'>
             <b:includable id='main'>
   <b:include name='reportAbuse'/>
 </b:includable>
           </b:widget>
-          <b:widget id='Profile1' locked='false' title='About Me' type='Profile' visible='true'>
+          <b:widget id='Profile1' locked='true' title='About Me' type='Profile' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='showaboutme'>true</b:widget-setting>
               <b:widget-setting name='showlocation'>false</b:widget-setting>
@@ -5962,7 +5962,7 @@ height: 100%;
   </a>
 </b:includable>
           </b:widget>
-          <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='false' title='' type='FeaturedPost' visible='true'>
+          <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='true' title='' type='FeaturedPost' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='showSnippet'>true</b:widget-setting>
               <b:widget-setting name='showPostTitle'>true</b:widget-setting>
@@ -5976,7 +5976,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='Label25' locked='false' title='Tags' type='Label' version='2' visible='true'>
+          <b:widget id='Label25' locked='true' title='Tags' type='Label' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
               <b:widget-setting name='display'>CLOUD</b:widget-setting>
@@ -6023,7 +6023,7 @@ height: 100%;
       </ul>
     </b:includable>
           </b:widget>
-          <b:widget id='AdSense1' locked='false' title='' type='AdSense' visible='true'>
+          <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='true'>
             <b:includable id='main'>
   <div class='widget-content'>
     <b:if cond='data:adCode'>
@@ -6034,7 +6034,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='AdSense2' locked='false' title='' type='AdSense' visible='true'>
+          <b:widget id='AdSense2' locked='true' title='' type='AdSense' visible='true'>
             <b:includable id='main'>
   <div class='widget-content'>
     <b:if cond='data:adCode'>
@@ -6045,7 +6045,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='BlogArchive1' locked='false' title='' type='BlogArchive' visible='true'>
+          <b:widget id='BlogArchive1' locked='true' title='' type='BlogArchive' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
               <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
@@ -6113,7 +6113,7 @@ height: 100%;
   </ul>
 </b:includable>
           </b:widget>
-          <b:widget cond='!data:view.isPost' id='PageList1' locked='false' title='' type='PageList' visible='false'>
+          <b:widget cond='!data:view.isPost' id='PageList1' locked='true' title='' type='PageList' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='pageListJson'><![CDATA[{"home":{"href":"http://rajitmatrix.blogspot.com/","position":0,"title":"Home"}}]]></b:widget-setting>
               <b:widget-setting name='homeTitle'>Home</b:widget-setting>
@@ -6163,7 +6163,7 @@ height: 100%;
   </ul>
 </b:includable>
           </b:widget>
-          <b:widget id='PopularPosts2' locked='false' title='Recent Posts' type='PopularPosts' version='2' visible='true'>
+          <b:widget id='PopularPosts2' locked='true' title='Recent Posts' type='PopularPosts' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -6427,7 +6427,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='PopularPosts3' locked='false' title='Popular Posts' type='PopularPosts' version='2' visible='true'>
+          <b:widget id='PopularPosts3' locked='true' title='Popular Posts' type='PopularPosts' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
               <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -6691,7 +6691,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='LinkList76' locked='false' title='Menu Footer Widget' type='LinkList' visible='true'>
+          <b:widget id='LinkList76' locked='true' title='Menu Footer Widget' type='LinkList' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
               <b:widget-setting name='text-1'>About</b:widget-setting>
