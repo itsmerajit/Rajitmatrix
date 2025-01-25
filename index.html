@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section Preview</title>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Poppins:400,400i,500,500i,700,700i' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <!-- Remix Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' rel='stylesheet'/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /* Team Section Styles */
+        #editorial-wrap {
+            padding: 50px 0;
+            background: #fff;
+        }
+        .head-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .head-text h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .head-text p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        /* Team Member Card */
+        .editorial-authors {
+            display: flex;
+            justify-content: center;
+        }
+        .editorial-avatar-wrap {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            max-width: 368px;
+        }
+        .editorial-avatar-wrap:hover {
+            transform: translateY(-5px);
+        }
+        .editorial-avatar img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .editorial-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .editorial-title {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .editorial-meta {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        /* Animation Classes */
+        .wow {
+            visibility: hidden;
+        }
+        .slideInLeft {
+            animation: slideInLeft 1s ease forwards;
+        }
+        .slideInRight {
+            animation: slideInRight 1s ease forwards;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+        <p>This is a simple HTML page with some basic styling and interaction.</p>
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="editorial-wrap">
+        <div class="container row">
+            <!-- Header Section -->
+            <div class="wow slideInLeft head-text">
+                <h2>Meet The Team</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text.</p>
+            </div>
+
+            <!-- Team Member Section -->
+            <div class="wow slideInRight editorial-authors">
+                <div class="editorial-avatar-wrap">
+                    <div class="editorial-avatar">
+                        <img src="https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w480/nth.png" alt="Coming Soon">
+                    </div>
+                    <div class="editorial-info">
+                        <h3 class="editorial-title">Coming Soon</h3>
+                        <span class="editorial-meta">Team Members Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Initialize WOW.js
+        new WOW().init();
+
+        function showMessage() {
+            document.getElementById('message').textContent = 'Hello! Thanks for clicking!';
+        }
+    </script>
+</body>
+</html>
