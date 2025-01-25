@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .message {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .message:hover {
+            background-color: #f9f9f9;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Form Messages</h1>
+    <div id="messages"></div>
+
+    <script>
+        async function loadMessages() {
+            try {
+                const response = await fetch('/api/messages');
+                const messages = await response.json();
+                
+                const messagesDiv = document.getElementById('messages');
+                messagesDiv.innerHTML = messages.reverse().map(msg => `
+                    <div class="message">
+                        <h3>${msg.name}</h3>
+                        <p><strong>Email:</strong> ${msg.email}</p>
+                        <p><strong>Message:</strong> ${msg.message}</p>
+                        <p class="date">Sent on: ${new Date(msg.date).toLocaleString()}</p>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Error loading messages:', error);
+            }
+        }
+
+        // Load messages immediately and refresh every 30 seconds
+        loadMessages();
+        setInterval(loadMessages, 30000);
+    </script>
+</body>
+</html>
